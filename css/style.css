@@ -7,6 +7,7 @@
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 body,
 html {
   margin: 0;
@@ -17,24 +18,13 @@ html {
 body {
   background: #fff;
   color: #231f20;
-
-  font-family: 'helvetica neue', helvetica, arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   display: -webkit-flex;
   -webkit-flex-direction: column;
   -webkit-align-items: center;
   -webkit-justify-content: center;
   text-align: center;
-}
-
-h1 {
-  color: #7d7d7d;
-  font: 500 60px/1.4 "Lucida Grande",verdana,sans-serif;
-  margin: 0 0 0 0;
-  -webkit-font-smoothing: antialiased;
-  text-transform: uppercase;
 }
 
 h2.count {
@@ -47,17 +37,6 @@ h2.count {
   -webkit-font-smoothing: antialiased;
 }
 
-h2.count span {
-  display: inline-block;
-  font-size: 35%;
-  letter-spacing: 0;
-  line-height: 1.7;
-  opacity: 0.7;
-  margin: 50px 0 0 0.5em;
-  opacity: 0.92;
-  vertical-align: top;
-}
-
 label {
   color: #494949;
   font: 500 60px/1.4 "Lucida Grande",verdana,sans-serif;
@@ -68,9 +47,7 @@ label {
 
 input {
   font: 400 13px/1.2 "Lucida Grande",verdana,sans-serif;
-
   background: rgba(255,255,255,0.65);
-
   border: 0 none;
   border-radius: 4px 4px;
   box-sizing: border-box;
@@ -79,7 +56,6 @@ input {
   outline: 0 none;
   padding: 24px 26px;
   -webkit-font-smoothing: antialiased;
-
   display: block;
 }
 
