@@ -81,4 +81,8 @@ App.fn.view = function(name){
 
 window.app = new App($('app'))
 
+document.getElementById('js-night').addEventListener('click', function() {
+  document.getElementById('body').classList.toggle('night');
+});
+
 })();

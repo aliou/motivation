@@ -85,3 +85,19 @@ footer {
   -webkit-flex-direction: row;
   -webkit-justify-content: center;
 }
+
+#js-night {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#body.night {
+  background-color: #494949;
+}
+
+.night .count,
+.night #js-night {
+  color: white;
+}
