@@ -82,7 +82,11 @@ App.fn.view = function(name){
 window.app = new App($('app'))
 
 document.getElementById('js-night').addEventListener('click', function() {
-  document.getElementById('body').classList.toggle('night');
+  localStorage.night = document.getElementById('body').classList.toggle('night');
 });
+
+if (localStorage.night === 'true') {
+  document.getElementById('body').classList.add('night');
+}
 
 })();
