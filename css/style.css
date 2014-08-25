@@ -95,6 +95,14 @@ footer {
   -webkit-transition: background-color 500ms ease-out 0.3s;
 }
 
+#date {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer;
+  color: #494949;
+}
+
 #js-night {
   position: fixed;
   bottom: 10px;
@@ -107,7 +115,8 @@ footer {
 }
 
 .night .count,
-.night #js-night {
+.night #js-night,
+.night #date {
   color: white;
 }
 
