@@ -48,6 +48,7 @@
   };
 
   App.fn.renderAgeLoop = function(){
+    this.tip = tips[Math.floor(Math.random() * tips.length)];
     this.interval = setInterval(this.renderAge.bind(this), 100);
   };
 
@@ -63,7 +64,8 @@
       this.html(this.view('age')({
         year:         majorMinor[0],
         milliseconds: majorMinor[1],
-        date: date
+        date: date,
+        tip: this.tip
       }));
     }.bind(this));
   };

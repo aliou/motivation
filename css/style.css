@@ -103,6 +103,11 @@ footer {
   color: #494949;
 }
 
+#tip {
+  text-align: center;
+  font-size: 15px;
+}
+
 #js-night {
   position: fixed;
   bottom: 10px;
@@ -116,6 +121,7 @@ footer {
 
 .night .count,
 .night #js-night,
+.night #tip,
 .night #date {
   color: white;
 }
