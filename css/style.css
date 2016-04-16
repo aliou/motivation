@@ -95,6 +95,17 @@ footer {
   -webkit-transition: background-color 500ms ease-out 0.3s;
 }
 
+code {
+  color: white;
+  background-color: #494949;
+  padding: 5px 10px;
+}
+
+.night code {
+  color: #494949;
+  background-color: white;
+}
+
 #date {
   position: fixed;
   bottom: 10px;
