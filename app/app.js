@@ -55,15 +55,17 @@
   App.fn.renderAge = function(){
     var now       = new Date
     var duration  = now - this.dob;
+    var days      = (duration / (1000 * 60 * 60 * 24)).toFixed(1).split('.')[0]
     var years     = duration / 31556900000;
 
     var majorMinor = years.toFixed(9).toString().split('.');
     var date = moment().format('MMMM Do YYYY, h:mm:ss a');
 
-    requestAnimationFrame(function(){
+    requestAnimationFrame(function () {
       this.html(this.view('age')({
         year:         majorMinor[0],
         milliseconds: majorMinor[1],
+        days: days,
         date: date,
         tip: this.tip
       }));
